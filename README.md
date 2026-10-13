@@ -4,7 +4,7 @@ Battery Alarm is an Android app that monitors battery level and can sound an ala
 
 ## Downloads
 
-Browse [all Battery Alarm releases](https://github.com/Kravet/battery-alarm-releases/releases). No APK has been published here yet. When a stable release is available, its APK will be named `BatteryAlarm.apk` and the [latest stable download link](https://github.com/Kravet/battery-alarm-releases/releases/latest/download/BatteryAlarm.apk) will work. Beta downloads will be listed on their individual prerelease pages.
+Browse [all Battery Alarm releases](https://github.com/Kravet/battery-alarm-releases/releases). No APK has been published here yet. When a stable release is available, it will appear on the [latest stable release page](https://github.com/Kravet/battery-alarm-releases/releases/latest) with an APK named `BatteryAlarm.apk`, available through the [direct stable download link](https://github.com/Kravet/battery-alarm-releases/releases/latest/download/BatteryAlarm.apk). Beta downloads will be listed on their individual prerelease pages.
 
 ## Install on Android
 
