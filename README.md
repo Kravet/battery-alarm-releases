@@ -16,6 +16,10 @@ Android app that alarms when battery is low.
 
 The app can check for updates itself. You can also download newer APKs here.
 
+## Privacy
+
+- [Privacy Policy](https://raw.githubusercontent.com/Kravet/battery-alarm-releases/main/PRIVACY.md) ([rendered](./PRIVACY.md))
+
 ## Feedback
 
 [GitHub Issues](https://github.com/Kravet/battery-alarm-releases/issues)
