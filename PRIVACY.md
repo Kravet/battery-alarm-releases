@@ -34,6 +34,7 @@ This policy covers the Battery Alarm Android app distributed as a signed APK via
 - The App can use **Firebase Analytics** and **Firebase Crashlytics** (Google) only after you **opt in**. Collection is **disabled by default**.
 - Analytics and Crashlytics are independent choices (you can allow one, both, or neither).
 - On first use, the App shows an in-app privacy BottomSheet so you can Allow Both, Decline Both, or customize.
+- If the in-app consent text changes, the App asks again. Until you record a new decision, Analytics and Crashlytics stay off.
 - You can change or withdraw consent later under **Privacy & Diagnostics** in the App.
 - The App may contact **GitHub’s public API** to check for updates.
 
@@ -166,10 +167,11 @@ Implementation facts:
 1. Firebase Analytics and Crashlytics collection are **disabled by default** in the App manifest until you opt in.
 2. On first launch (until you record a decision), the App shows a privacy BottomSheet: Allow Both, Decline Both, or Customize choices.
 3. Dismissing the sheet without a decision does **not** grant consent; collection remains off.
-4. You can open **Privacy & Diagnostics** anytime to turn Usage Analytics and Crash Reports on or off independently. Changes apply immediately.
-5. Consent choices are stored on device and restored after app restart.
-6. Advertising ID collection remains disabled in the manifest.
-7. Withdrawing Crashlytics consent disables further crash collection and asks the SDK to delete unsent local reports. Already transmitted data may remain subject to Google’s retention.
+4. If the in-app consent text version changes, the App shows the BottomSheet again. Previous Analytics/Crashlytics opt-in does not stay active until you record a new decision.
+5. You can open **Privacy & Diagnostics** anytime to turn Usage Analytics and Crash Reports on or off independently. Changes apply immediately.
+6. Consent choices are stored on device and restored after app restart, unless the consent text version has changed (see point 4).
+7. Advertising ID collection remains disabled in the manifest.
+8. Withdrawing Crashlytics consent disables further crash collection and asks the SDK to delete unsent local reports. Already transmitted data may remain subject to Google’s retention.
 
 Core alarm monitoring and alerts continue to work if you decline or withdraw consent.
 
@@ -183,7 +185,7 @@ Other practical steps:
 
 ## 12. Children
 
-Battery Alarm is intended for general users and is not specifically directed at children.
+Battery Alarm is intended for general users and is **not directed at children under 16**. We do not knowingly collect personal data from children. If you believe a child has provided personal data through the App, contact kravetapp@gmail.com.
 
 ---
 
